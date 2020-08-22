@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment</title>
+   
+    <style>
+    body{
+        background-image:url("image/bg_img.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:100% 100%;
+     }
+
+      table{
+        background-color: #74BDD5;
+      }
+      b{
+        color: white ;
+      }
+      i{
+        color: white ;
+      }
+
+      .data{
+        align-items: center;
+        justify-content: center; 
+        padding: 135px 135px;
+      }
+      #tabl{
+        display:none;
+      }
+      .tab{
+        margin-top: 40px;
+        padding-left: 40px;
+      }
+      .option{
+        padding-top: 40px;
+        text-align: center;
+
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <br>
+    <div class="option">
+      <h2 style="font-family: calibri">Choose one option from below</h2>
+    </div>
+    
+    <div class="data">
+      <select name="item restaurant-dropdown restaurant" class="custom-select custom-select-lg mb-3" id="restaurant">
+        <option value="">Select</option>
+    </select>
+
+    <br>
+  
+    <table id="tabl" class="table table-blue tab">
+      <div class="option">
+        <h2 style="font-family: calibri">Description</h2>
+      </div>
+      
+      <tr>
+        <th>Name</th>
+        <td id="name"></td>
+      </tr>
+
+      <tr>
+        <th>Short Name</th>
+        <td id="s_name"></td>
+      </tr>
+
+      <tr>
+        <th>ID</th>
+        <td id="id"></td>
+      </tr>
+      
+      <tr>
+        <th>Description</th>
+        <td id="descpt"></td>
+      </tr>
+
+      <tr>
+        <th>Small Price</th>
+        <td id="p_small"></td>
+      </tr>
+
+      <tr>
+        <th>Large Price</th>
+        <td id="p_large"></td>
+      </tr>
+
+      <tr>
+        <th>Small Portion Name</th>
+        <td id="small_name"></td>
+      </tr>
+
+      <tr>
+        <th>Large Portion Name</th>
+        <td id="large_name"></td>
+      </tr>
+    </table>
+  </div>
+
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="script.js" defer></script>
+
+  </body>
+</html>
